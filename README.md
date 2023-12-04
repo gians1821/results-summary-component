@@ -35,7 +35,7 @@ Mobile Preview
 
 ### Links
 
-- Solution URL: [My solution]()
+- Solution URL: [My solution](https://www.frontendmentor.io/solutions/results-summary-using-html-css-and-js-lk4YRrqQBs)
 - Live Site URL: [My live site](https://gians1821.github.io/results-summary-component/index.html)
 
 ## My process
