@@ -21,8 +21,7 @@ for (const element of elements) {
     $title.innerText = category
     $span.innerText = score
 
-
-    $p.append($span, document.createTextNode = " / 100")        // UTILIZANDO FUNCIÓN PARA ANIDAR TEXTO    
+    $p.append($span, ' / 100')    
     $div.append($img, $title)
     $section.append($div, $p)
     $resultsContainer.appendChild($section)
