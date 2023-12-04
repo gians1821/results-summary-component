@@ -18,6 +18,7 @@ for (const element of elements) {
 
     $section.classList.add('test-element')
     $img.setAttribute('src', icon)
+    $img.setAttribute('alt', `${category.toLowerCase()}-image`)
     $title.innerText = category
     $span.innerText = score
 
