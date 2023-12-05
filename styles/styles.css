@@ -14,6 +14,8 @@
   --bg-third-element: hsla(166, 100%, 37%, .25); /* Green teal */
   --bg-fourth-element: hsla(234, 85%, 45%, .25); /* Cobalt blue */
   
+  --bg-wasa: hsla(234, 60%, 25%, .85); /* Cobalt blue */
+  
   --first-element: hsla(0, 100%, 67%); /* Light red */
   --second-element: hsla(39, 100%, 56%); /* Orangey yellow */
   --third-element: hsla(166, 100%, 37%); /* Green teal */
@@ -208,6 +210,29 @@ body {
   color: var(--fourth-element);
 }
 
+#wasa-container {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background: var(--bg-wasa);
+}
+
+#wasa-container > picture {
+  padding: 32px;
+  display: block;
+}
+
+#wasa-container > picture > img {
+  width: 100%;
+}
+
+#wasa-container > p {
+  text-align: center;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 4rem;
+}
+
 .attribution {
   font-size: 14px;
   text-align: center;
@@ -233,4 +258,11 @@ body {
 	#summary-card {
 		width: 100%;
 	}
+  #wasa-container {
+    width: 400px;
+    height: 400px;
+  }
+  #wasa-container > p {
+    font-size: 32px;
+  }
 }

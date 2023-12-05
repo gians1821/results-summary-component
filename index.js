@@ -2,7 +2,9 @@ import { data } from './data.js'
 
 const elements = JSON.parse(data)
 
+const $body = document.querySelector('body')
 const $resultsContainer = document.querySelector('#results-container')
+const $button = document.querySelector('button')
 
 for (const element of elements) {
     const icon = element['icon']
@@ -27,3 +29,21 @@ for (const element of elements) {
     $section.append($div, $p)
     $resultsContainer.appendChild($section)
 }
+
+$button.addEventListener('click', () => {
+    const div = document.createElement('div')
+    const button = document.createElement('button')
+    const imgClose = document.createElement('img')
+    const picture = document.createElement('picture')
+    const imgWasa = document.createElement('img')
+    const p = document.createElement('p')
+    
+    div.setAttribute('id', 'wasa-container')
+    p.innerText = 'WASA 🤪'
+    imgWasa.setAttribute('src', 'https://media.tenor.com/nVSmF0rmEOsAAAAC/whats-up-wazzup.gif')
+
+    picture.append(imgWasa)
+    button.append(imgClose)
+    div.append(button, picture, p)
+    $body.append(div)
+})
